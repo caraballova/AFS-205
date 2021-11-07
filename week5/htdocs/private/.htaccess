@@ -1,0 +1,6 @@
+<Directory "./PRIVATE">
+  AuthType Basic
+  AuthName "PRIVATE USERS ONLY"
+  AuthUserFile "./PRIVATE/INDEX.HTML"
+  Require valid-user
+</Directory>
