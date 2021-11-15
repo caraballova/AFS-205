@@ -4,16 +4,191 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <a href="myBio.html" class="bio">A little About Me</a>
-  <a href="myMajor.html" class="major">My Choice of Study</a>
-  <a href="myProjects.html" class="projects">My accomplishments</a>
+    <title>V Technologies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 10px;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  padding: 20px;
+}
+
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
   
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+}
 
 
-        <h1>Welcome!</h1>
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
 
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 40%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #0a0a0a;
+  color: white;
+}
+
+.fa-twitter {
+  background: #0d0d0e;
+  color: white;
+}
+.fa-linkedin {
+  background: #0f0f0f;
+  color: white;
+}
+
+.fa-envelope {
+    background: #0f0f0f;
+    color: white;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+.leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+}
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.topnav a {
+    float: none;
+    width: 100%;
+}
+
+img {
+    width: fit-content;
+}
+
+}
+
+</style>  
+
+
+
+</head>
+
+<body>
+
+    <div class="header">
+      <h1>V Technologies</h1>
+    </div>
+
+    <ul>
+        <li><a href="myBio.html" class="bio">About Me</a></li>
+        <li><a href="myMajor.html" class="major">Major</a></li>
+        <!-- <li><a href="myProjects.html" class="projects">Accomplishments</a></li> -->
+    </ul>
+    
+    <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2></h2>
+            <h5>Looking for a web dev associate?.. look no more.</h5>
+            <div class="fakeimg" style="height:200px;"></div>
+            <p>Aspiring to become a Full Stack Web Developer</p>
+            <p></p>
+          </div>
+          
+      </div>
+      
+      <div class="footer">
+        <h4>V Technologies WebDev 2022</h4>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-envelope"></a>
+        
+      </div>    
+    
+    
+    
 </body>
 </html>

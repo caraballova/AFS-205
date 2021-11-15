@@ -1,14 +1,224 @@
-<html>
-    <body>
-  
-        <a href="./index.html" class="home">Home</a>
-        <a href="myMajor.html" class="major">My Choice of Study</a>
-        <a href="myProjects.html" class="projects">My accomplishments</a>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V Technologies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 50px;
+}
 
 
-        <h1>All About Me</h1>
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Navbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.me {
+  width: 20%;
+  height: 400px;
+  border-radius: 50%;
+}
+
+.myboys {
+    width: 30%;
+    height: 400px;
+}
+
+/* Icons */
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 40%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #0a0a0a;
+  color: white;
+}
+
+.fa-twitter {
+  background: #0d0d0e;
+  color: white;
+}
+.fa-linkedin {
+  background: #0f0f0f;
+  color: white;
+}
+
+.fa-envelope {
+    background: #0f0f0f;
+    color: white;
+}
+
+</style>  
+
+
+
+</head>
+
+<body>
+
+    <div class="header">
+      <h1>V Technologies</h1>
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="myBio.html" class="bio">About Me</a></li>
+        <li><a href="myMajor.html" class="major">Major</a></li>
+        <!-- <li><a href="myProjects.html" class="projects">Accomplishments</a></li> -->
+    </ul>
+    
+    <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>About Me</h2>
+            <div class="fakeimg"><img class="me" src="me1.jpg"></div>
+            <p>My name is Vanessa. I am studying to become a Full Stack Web Developer. When I am not coding, I am a mom to two wonderful boys name Jeremiah & Christian.</p> 
+            <p>I am also a pet mom with 2 turtles and 3 ferrets. </p>
+          </div>
+          <div class="card">
+            <h2>My Children</h2>
+            <div class="fakeimg"><img class="myboys" src="myboys.jpg"></div>
+            <p>Jeremiah (left) & Christian (right)</p>
+            <p>The reason I aspire to be the best I can be. I have two little humans watching my every move.</p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>Turtles</h2>
+            <div class="fakeimg" ><img src="turtles.jpg"></div>
+            <p>Bonnie & Donnie</p>
+          </div>
+          <div class="card">
+            <h3>Ferrets</h3>
+            <div class="fakeimg"><p><img src="lucifer.jpg">Lucifer</p></div>
+            <div class="fakeimg"><p><img src="princess.jpg">Princess</p></div>
+            <div class="fakeimg"><p><img src="ferrets.jpg"><br>Zeus & Princess</p></div>
+          </div>
+          
         
-    </body>
-
+        </div>
+      </div>
+      
+      <div class="footer">
+        <h2></h2>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-envelope"></a>
+      </div>    
+    
+    
+    
+</body>
 </html>

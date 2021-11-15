@@ -1,6 +1,5 @@
-<Directory "./PRIVATE">
+  AuthUserFile "/usr/local/apache2/conf/.htpasswd"
   AuthType Basic
   AuthName "PRIVATE USERS ONLY"
-  AuthUserFile "./PRIVATE/INDEX.HTML"
   Require valid-user
-</Directory>
+

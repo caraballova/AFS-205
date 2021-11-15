@@ -1,14 +1,233 @@
-<html>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V Technologies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 10px;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
   
-        <a href="./index.html" class="home">Home</a>     
-        <a href="myBio.html" class="bio">A little About Me</a>
-        <a href="myProjects.html" class="projects">My accomplishments</a>
+li {
+    float: left;
+}
   
+li a {
+    display: block;
+    color: rgb(8, 8, 8);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: rgb(114, 178, 189);
+}
 
 
-        <h1>My Choice of Study</h1>
-        
-    </body>
+.header {
+    background-color: #ebe7e7;
+    text-align: center;
+    padding: 20px;
+}
 
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+img {
+  width: 20%;
+  height: 400px;
+  border-radius: 50%;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 40%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #0a0a0a;
+  color: white;
+}
+
+.fa-twitter {
+  background: #0d0d0e;
+  color: white;
+}
+.fa-linkedin {
+  background: #0f0f0f;
+  color: white;
+}
+
+.fa-envelope {
+    background: #0f0f0f;
+    color: white;
+}
+
+.skills {
+    background: white;
+    padding-left: 12%;
+}
+
+</style>  
+
+
+
+</head>
+
+<body>
+
+    <div class="header">
+      <h1>V Technologies</h1>
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="myBio.html" class="bio">About Me</a></li>
+        <li><a href="myMajor.html" class="major">Major</a></li>
+        <!-- <li><a href="myProjects.html" class="projects">Accomplishments</a></li> -->
+    </ul>
+    
+    <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>Full Stack Web Development</h2>
+            <div class="fakeimg"></div>
+            <p>Skills:</p> 
+            <span class="skills"> 
+                <ul style="width: 350px; display: inline-block;">
+                   <li>HTML</li><br>
+                   <li>CSS</li><br>
+                   <li>JavaScript</li><br>
+                   <li>Linux</li><br>
+                   <li>Node</li><br>
+                   <li>React</li><br>
+                   <li>Express</li><br>
+                   <li>Mongo DB</li><br>
+                   <li>Mongoose</li><br>
+                   <li>MySQL & PostgreSQL</li><br>
+                   <li>HTTP, AJAX, & APIs</li><br>
+                </ul>
+             
+                <ul style="display: inline-block;">
+                   <li>Python</li><br>
+                   <li>Django</li><br>
+                   <li>NGINX, Apache, Docker</li><br>
+                   <li>Data Structures</li><br>
+                   <li>Algorithms</li><br>
+                   <li>Testing, QA, & version control</li><br>
+                   <li>Written Communication & presenting</li><br>
+                   <li>Teamwork</li><br>
+                   <li>Critical Thinking</li><br>
+                   <li>Problem Solving</li><br>
+                   <li></li><br>
+                </ul>
+             <span>
+          </div>
+        </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <h2></h2>
+        <h3>Follow Me ...</h3>
+        <p>Want to know what my next adventures are</p>
+        <b></b>
+
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-envelope"></a>
+      </div>    
+    
+    
+    
+</body>
 </html>
